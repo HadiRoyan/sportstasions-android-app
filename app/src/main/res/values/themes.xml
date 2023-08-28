@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.SportStations" parent="Theme.Material3.DayNight">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@color/white</item>
+
+    </style>
+
+    <style name="Theme.SportStations" parent="Base.Theme.SportStations" />
+
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <item name="android:windowSplashScreenAnimatedIcon" tools:targetApi="s">@drawable/baseline_sports_tennis_24</item>
+        <item name="android:windowSplashScreenBackground" tools:targetApi="s">@color/platinum</item>
+        <item name="postSplashScreenTheme">@style/Base.Theme.SportStations</item>
+    </style>
+</resources>
